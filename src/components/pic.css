@@ -1,0 +1,19 @@
+.pic {
+    height: 200px;
+    background-image: url("../image/drawers.jpg");
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -17px;
+}
+
+@media (min-width: 1200px) {
+    .pic {
+        flex: 1;
+        height: 280px;
+        background-position: 0 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+}

@@ -1,0 +1,142 @@
+.profile {
+    display: flex;
+    /* height: 50px; */
+    padding-left: 32px;
+    /* padding-right: 32px; */
+    padding-top: 12px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    /* padding-top: 6px; */
+    /* padding-left: 32px; */
+    /* padding-right: 14px; */
+    /* opacity: 0; */
+}
+
+.info {
+    padding-left: 16px;
+    padding-right: 50px;
+
+}
+.info .name {
+    font-size: 13.2px;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    /* opacity: 0; */
+}
+.info .data {
+    padding-top: 3px;
+    font-size: 13.1px;
+    color: var(--Grayish-Blue);
+}
+.share-icon {
+    position: absolute;
+    right: 33px;
+    margin-left: 10px;
+    border-radius: 50px;
+    margin-top: 5px;
+    height: 31px;
+    width: 31px;
+    background-color: var(--Light-Grayish-Blue);
+    background-image: url("../image/icon-share.svg");
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+    cursor: pointer;
+}
+
+.share {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.share.open {
+    display: flex;
+    align-items: center;
+}
+
+.share.open p {
+    font-size: 15.5px;
+    color: var(--Grayish-Blue);
+    margin-left: 32px;
+    margin-right: 19px;
+}
+.share.open img {
+    height: 20px;
+    width: 20px;
+    margin-right: 17px;
+}
+.share.open .share-icon {
+    position: absolute;
+    margin-left: 39.5px;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 1200px) {
+    .profile {
+        padding-top: 0px;
+        padding-left: 40px;
+    }
+
+    /* .avatar {
+        height: 50px;
+        width: 50px;
+    } */
+
+    .info {
+        padding-left: 16px;
+    }
+
+    .share-icon {
+        right: 40.5px;
+        top:-1px;
+    }
+    .share {
+        top: -80px;
+        right: -67px;
+        left: 265px;
+        bottom: 85px;
+        border-radius: 10px;
+    }
+    .share::after {
+        content: "";
+        /* background-color: var(--Very-Dark-Grayish-Blue); */
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 54px;
+        left: 110px;
+        border: 13px solid;
+        border-color: var(--Very-Dark-Grayish-Blue) transparent transparent;
+    }
+
+    .share.open .share-icon {
+        display: none;
+    }
+
+    .share.open p {
+        padding-top: 1px;
+        padding-left: 4px;
+    }
+
+    .share.open img {
+        height: 20px;
+        width: 20px;
+        margin-right: 16px;
+    }
+    .brand {
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+}
